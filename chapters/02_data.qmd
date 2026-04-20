@@ -1,0 +1,25 @@
+---
+title: "Data & Variables"
+---
+
+## 变量定义（与作业一致）
+
+$$
+Lev_{it} = \frac{\text{总负债}_{it}}{\text{总资产}_{it}}, \quad
+NPR_{it} = \frac{\text{净利润}_{it}}{\text{总资产}_{it}}, \quad
+Size_{it} = \ln(\text{总资产}_{it})
+$$
+
+$$
+Tang_{it} = \frac{\text{固定资产净值}_{it}}{\text{总资产}_{it}}, \quad
+Growth_{it} = \frac{TA_{it}-TA_{i,t-1}}{TA_{i,t-1}}
+$$
+
+$$
+NDTS_{it} = \frac{\text{折旧与摊销}_{it}}{\text{总资产}_{it}}, \quad
+m2\_growth_t = \frac{M2_t - M2_{t-1}}{M2_{t-1}} \times 100
+$$
+
+## 数据来源说明
+
+本仓库默认使用 **AkShare / 东方财富** 拉取年报三大表（非 CSMAR 导出）。若课程强制 CSMAR，请将官方 CSV 放入 `data/raw/` 并保持列名与 `codes/panel_build.py` 中映射一致。

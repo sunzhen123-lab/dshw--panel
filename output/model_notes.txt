@@ -1,0 +1,9 @@
+模型说明（与 ex_P03 对齐要点）
+================================
+1. M1 双向固定效应（TWFE）：
+   $$Lev_{it}=\alpha_i+\lambda_t+\beta\,NPR_{it}+\boldsymbol{\gamma}'\mathbf{X}_{it}+\varepsilon_{it}$$
+   标准误：Cameron–Gelbach–Miller 型 **公司与年度双向聚类**（linearmodels）。
+2. M1′：在 TWFE 中加入可观测宏观变量 $m2\_growth_t$；完整交互固定效应（IFE）形式为
+   $$Lev_{it}=\alpha_i+\beta NPR_{it}+\theta\, m2\\_growth_t+\boldsymbol{\lambda}_i'\boldsymbol{f}_t+\cdots$$
+   需 Stata regife 或等价程序估计；本仓库以 **M2 增速控制 + TWFE** 作可复现近似。
+3. M3 中 $SOE_i$ 主效应被 $\alpha_i$ 吸收，仅交互项 $NPR\times SOE$ 可识别斜率差异。

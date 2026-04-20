@@ -1,0 +1,20 @@
+---
+title: "前言"
+---
+
+本 Book 为 [《上市公司资本结构影响因素分析》](https://github.com/lianxhcn/dsfin/blob/main/homework/ex_P03_Panel-capital_strucuture.md) 的可复现报告骨架；正文图表由仓库内 `run_p03.py` 与 Notebook 生成。
+
+**核心理论与检验对象**
+
+- **权衡理论（Trade-off）**：盈利能力高 → 税盾与偿债能力强 → 预测 $NPR_{it}$ 与 $Lev_{it}$ **正相关**。
+- **优序融资（Pecking Order）**：盈利高 → 内源融资充裕 → 少举债 → 预测 $NPR_{it}$ 与 $Lev_{it}$ **负相关**。
+
+基准双向固定效应（TWFE）设定为
+
+$$
+Lev_{it} = \alpha_i + \lambda_t + \beta\, NPR_{it} + \boldsymbol{\gamma}'\mathbf{X}_{it} + \varepsilon_{it}
+$$
+
+其中 $\mathbf{X}_{it}$ 包含 $Size_{it}, Tang_{it}, Growth_{it}, NDTS_{it}$ 等控制变量。
+
+> **本地渲染**：安装 [Quarto](https://quarto.org) 后，在仓库根目录执行 `quarto render`。将 `_book/` 发布到 GitHub Pages 即完成选做加分流程（仓库名建议 `dshw--panel`）。

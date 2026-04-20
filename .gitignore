@@ -1,0 +1,17 @@
+# 作业建议：GitHub 仓库不含原始数据；坚果云 zip 需自行包含 data/raw/
+data/raw/
+data_raw/
+data_clean/
+data/clean/*.dta
+*.log
+.ipynb_checkpoints/
+.DS_Store
+__pycache__/
+*.pyc
+.pytest_cache/
+output/figures/*.tmp
+.venv/
+.mpl/
+_book/
+_site/
+/.quarto/

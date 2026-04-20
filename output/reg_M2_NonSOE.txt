@@ -1,0 +1,36 @@
+                          PanelOLS Estimation Summary                           
+================================================================================
+Dep. Variable:                    lev   R-squared:                        0.1505
+Estimator:                   PanelOLS   R-squared (Between):              0.4604
+No. Observations:                 199   R-squared (Within):               0.1635
+Date:                Mon, Apr 20 2026   R-squared (Overall):              0.3209
+Time:                        15:17:46   Log-likelihood                    136.85
+Cov. Estimator:             Clustered                                           
+                                        F-statistic:                      5.8812
+Entities:                          14   P-value                           0.0000
+Avg Obs:                       14.214   Distribution:                   F(5,166)
+Min Obs:                       12.000                                           
+Max Obs:                       15.000   F-statistic (robust):             17.913
+                                        P-value                           0.0000
+Time periods:                      15   Distribution:                   F(5,166)
+Avg Obs:                       13.267                                           
+Min Obs:                       5.0000                                           
+Max Obs:                       14.000                                           
+                                                                                
+                             Parameter Estimates                              
+==============================================================================
+            Parameter  Std. Err.     T-stat    P-value    Lower CI    Upper CI
+------------------------------------------------------------------------------
+Intercept     -0.1749     1.6496    -0.1060     0.9157     -3.4317      3.0819
+npr            0.0276     0.0120     2.2946     0.0230      0.0039      0.0513
+size           0.0352     0.0721     0.4887     0.6257     -0.1071      0.1775
+tang          -0.5576     0.4403    -1.2665     0.2071     -1.4268      0.3116
+growth        -0.0263     0.0189    -1.3918     0.1658     -0.0636      0.0110
+ndts           0.9103     1.5404     0.5910     0.5554     -2.1310      3.9516
+==============================================================================
+
+F-test for Poolability: 4.2367
+P-value: 0.0000
+Distribution: F(27,166)
+
+Included effects: Entity, Time

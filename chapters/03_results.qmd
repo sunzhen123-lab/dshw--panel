@@ -1,0 +1,16 @@
+---
+title: "Empirical Results"
+---
+
+## 主回归
+
+- **M1**：TWFE + **公司与年度双向聚类**标准误（`linearmodels`）。
+- **M1′**：TWFE + $m2\_growth_t$（**IFE 的可复现代理**；完整 regife 见 Stata 讲义）。
+- **M2**：按 $SOE$ 分组 TWFE。
+- **M3**：交互项 $NPR_{it} \times SOE_i$（$SOE_i$ 主效应被 $\alpha_i$ 吸收）。
+
+详细系数表见 `output/reg_*.txt` 与 `output/tables/reg_m1_m3_summary.tex`。
+
+## 图形
+
+所有图位于 `output/figures/`，包括 Fig.1–Fig.7 及 **Fig.7b**（2015–2025 子样本门槛稳健性）。

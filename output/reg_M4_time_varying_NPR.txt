@@ -1,0 +1,50 @@
+                          PanelOLS Estimation Summary                           
+================================================================================
+Dep. Variable:                    lev   R-squared:                        0.3395
+Estimator:                   PanelOLS   R-squared (Between):              0.5511
+No. Observations:                 199   R-squared (Within):               0.3054
+Date:                Mon, Apr 20 2026   R-squared (Overall):              0.4317
+Time:                        15:17:46   Log-likelihood                    161.88
+Cov. Estimator:             Clustered                                           
+                                        F-statistic:                      4.1113
+Entities:                          14   P-value                           0.0000
+Avg Obs:                       14.214   Distribution:                  F(19,152)
+Min Obs:                       12.000                                           
+Max Obs:                       15.000   F-statistic (robust):            -4.4404
+                                        P-value                           1.0000
+Time periods:                      15   Distribution:                  F(19,152)
+Avg Obs:                       13.267                                           
+Min Obs:                       5.0000                                           
+Max Obs:                       14.000                                           
+                                                                                
+                                                 Parameter Estimates                                                 
+=====================================================================================================================
+                                                   Parameter  Std. Err.     T-stat    P-value    Lower CI    Upper CI
+---------------------------------------------------------------------------------------------------------------------
+Intercept                                             0.0027     1.6830     0.0016     0.9987     -3.3225      3.3278
+npr                                                   2.7257     1.3170     2.0696     0.0402      0.1237      5.3276
+size                                                  0.0276     0.0735     0.3763     0.7072     -0.1175      0.1728
+tang                                                 -0.7335     0.4828    -1.5191     0.1308     -1.6874      0.2205
+growth                                               -0.0189     0.0170    -1.1133     0.2674     -0.0524      0.0146
+ndts                                                  1.6277     1.6425     0.9910     0.3233     -1.6175      4.8728
+npr:C(C(year, Treatment(reference=2011)))[T.2012]    -3.8104     2.3159    -1.6453     0.1020     -8.3859      0.7652
+npr:C(C(year, Treatment(reference=2011)))[T.2013]    -2.6904     1.3140    -2.0475     0.0423     -5.2864     -0.0944
+npr:C(C(year, Treatment(reference=2011)))[T.2014]    -1.5876     0.7290    -2.1777     0.0310     -3.0280     -0.1472
+npr:C(C(year, Treatment(reference=2011)))[T.2015]    -3.3227     1.3176    -2.5218     0.0127     -5.9258     -0.7196
+npr:C(C(year, Treatment(reference=2011)))[T.2016]    -4.5469     1.7622    -2.5802     0.0108     -8.0285     -1.0653
+npr:C(C(year, Treatment(reference=2011)))[T.2017]    -2.8581     1.3156    -2.1725     0.0314     -5.4573     -0.2589
+npr:C(C(year, Treatment(reference=2011)))[T.2018]    -3.3634     1.1908    -2.8245     0.0054     -5.7160     -1.0108
+npr:C(C(year, Treatment(reference=2011)))[T.2019]    -4.2010     1.5877    -2.6459     0.0090     -7.3379     -1.0642
+npr:C(C(year, Treatment(reference=2011)))[T.2020]    -3.5947     1.2611    -2.8504     0.0050     -6.0863     -1.1031
+npr:C(C(year, Treatment(reference=2011)))[T.2021]    -3.0747     0.9679    -3.1766     0.0018     -4.9870     -1.1624
+npr:C(C(year, Treatment(reference=2011)))[T.2022]    -3.0287     1.3081    -2.3154     0.0219     -5.6131     -0.4443
+npr:C(C(year, Treatment(reference=2011)))[T.2023]    -4.0616     1.2286    -3.3059     0.0012     -6.4889     -1.6343
+npr:C(C(year, Treatment(reference=2011)))[T.2024]    -4.1949     1.2120    -3.4611     0.0007     -6.5895     -1.8004
+npr:C(C(year, Treatment(reference=2011)))[T.2025]    -2.3933     1.9210    -1.2458     0.2147     -6.1886      1.4021
+=====================================================================================================================
+
+F-test for Poolability: 4.2938
+P-value: 0.0000
+Distribution: F(27,152)
+
+Included effects: Entity, Time

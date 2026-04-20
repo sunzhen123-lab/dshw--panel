@@ -1,0 +1,25 @@
+project:
+  type: book
+  output-dir: _book
+
+book:
+  title: "上市公司资本结构：面板实证（P03）"
+  author: "姬亚楠"
+  description: "与课程作业 ex_P03 对齐的可复现分析（Python + Quarto Book 加分项）"
+  chapters:
+    - index.qmd
+    - chapters/01_intro.qmd
+    - chapters/02_data.qmd
+    - chapters/03_results.qmd
+    - chapters/04_robustness.qmd
+    - chapters/05_conclusion.qmd
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+    number-sections: true
+    lang: zh-Hans
+
+execute:
+  freeze: auto

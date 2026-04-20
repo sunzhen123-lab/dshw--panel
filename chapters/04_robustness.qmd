@@ -1,0 +1,12 @@
+---
+title: "Robustness Checks"
+---
+
+## M4：时变系数
+
+估计式在 TWFE 下加入 $NPR_{it}$ 与年度虚拟变量的交互，得到 $\{\hat\beta_t\}$，对应 **Fig.5**。
+
+## M5–M6：函数系数与门槛
+
+- **M5**：$\beta(Size_{it}) = \beta_0 + \beta_1 Size_{it} + \beta_2 Size_{it}^2$，绘制 $\hat\beta(Size)$ 及 **95% 置信带**（**Fig.6**）。
+- **M6**：对门槛变量 $Size$ 做网格 LR 型曲线（**Fig.7**），并在 **2015–2025 子样本**重复（**Fig.7b**）。
